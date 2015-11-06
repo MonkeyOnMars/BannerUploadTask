@@ -4,6 +4,8 @@ RV banner upload task via java.
 TODO: Need to look into shceduling java functionality. 
 Meanwhile threads are used. 
 
+INSTALL AND RUN
+------------------
 WINDOWS:
 
 Build code with "build_win.bat". 
@@ -18,5 +20,14 @@ UNX:
 
 Build code with buildx.sh. JAVA_HOME must be set. 
 Rub code with runx.sh.
+-------------------
 
+Description:
+
+Application reads values from http://www.pukukurjers.lv/veikals.xml every 15 min.
+Every 1 min one banner from that list is written to banner.html as DIV
+bannerConsumer.html injects banner.html onload.
+
+
+Refresh bannerConsumer.html to see results.
 
