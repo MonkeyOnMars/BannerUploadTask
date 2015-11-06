@@ -54,7 +54,7 @@ public class BannerWriter implements Runnable
                 refreshInterval=(int)(Common.XML_READ_INTERVAL/Common.HTML_WRITE_INTERVAL);
             }
             
-            Common.log("Refresh interval: ".concat(String.valueOf(refreshInterval)),m);
+            Common.log("Update of banner list on count of: ".concat(String.valueOf(refreshInterval)),m);
             
             do
             {                      
