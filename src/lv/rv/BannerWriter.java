@@ -65,8 +65,11 @@ public class BannerWriter implements Runnable
                                }
                             if(!Thread.interrupted())	
                             {  
-                                  if (banners==null || x>refreshInterval)
-                                  {
+                                  if (x>refreshInterval || banners==null
+                                      || banners.getPbs()==null
+                                      || banners.getPbs().size()==0
+                                      )
+                                    {  
                                       Common.log("get banner list",m);
                                       x=0;
                                       banners=getCurrentBanners();
