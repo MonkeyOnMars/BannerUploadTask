@@ -11,8 +11,10 @@ import java.net.URLConnection;
 
 /**
  *
- * @author root
- * reads url and save xml to heap/db every 15 min
+ * @author rbe
+ * reads url and saves xml to heap/(db - not sup yet) every 15 min 
+ * (wait interval is stored in Common)
+ * 
  */
 public class BannerReader implements Runnable
 {
@@ -73,6 +75,7 @@ public class BannerReader implements Runnable
                                        {
                                            Common.log("Exception. Something went terribly wrong.",m);
                                            ex.printStackTrace();
+                                           System.exit(1);
                                            return;
                                        }
                                         finally

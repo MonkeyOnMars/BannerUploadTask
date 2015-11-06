@@ -6,6 +6,7 @@ import java.util.Date;
 
 public class Common 
 {
+    //TODO this should go to config
     public static  String OUT_FILE               = null; //"C:/temp/banner.html";
     public final   static String XML_URL         = "http://www.pukukurjers.lv/veikals.xml";
     public static  int XML_READ_INTERVAL   = 15*60*1000;//1*60*1000;
@@ -18,8 +19,9 @@ public class Common
      {
          return milis/60/1000;
      }
-//TODO replace with log4j
- 
+    
+    
+    //TODO replace with log4j (or similar)
     public static void log(String msg)
     {
         if (DBG)

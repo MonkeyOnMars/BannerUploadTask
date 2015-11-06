@@ -22,6 +22,7 @@ public class BannerUpload
         Common.log("===================");
         Common.log("Use CTRL+C to exit.");
         Common.log("===================");
+        Common.log("");
         
         
          if (Common.OUT_FILE ==null)
@@ -35,9 +36,8 @@ public class BannerUpload
                 {
                     Common.log("IO Exception looking for current proj directory.");
                     return;
-                }
-               
-                Common.log(new StringBuffer("Set out to: ").append(Common.OUT_FILE).toString());
+                }               
+               // Common.log(new StringBuffer("Set out to: ").append(Common.OUT_FILE).toString());
             }
         
         Common.log("Banner will be written to ".concat(Common.OUT_FILE));

@@ -17,8 +17,9 @@ import org.xml.sax.SAXException;
 /**
  *
  * 
- * takes recently loaded xml file from heap
- * generates banner in html? format (or update existing html)
+ * takes recently loaded xml from heap
+ * generates banner in html? format saves it to banner.html
+ * every 1 min (this interval defined in Common)
  */
 
 public class BannerWriter implements Runnable
