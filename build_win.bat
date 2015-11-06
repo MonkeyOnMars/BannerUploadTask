@@ -1,6 +1,8 @@
 Echo Off
 
-set "JAVA_HOME=C:\Program Files\Java\jdk1.8.0_11"
+rem set "JAVA_HOME=C:\Program Files\Java\jdk1.8.0_11"
+
+echo "Make sure JAVA_HOME is pointing to JDK!"
 echo "%JAVA_HOME%"
 set "ANT_HOME=%cd%\external\apache-ant-1.9.6"
 echo "%ANT_HOME%"
