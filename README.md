@@ -1,7 +1,7 @@
 # BannerUploadTask
-rv banner upload task
+RV banner upload task via java.
 
-Need to look into shceduling java functionality. 
+TODO: Need to look into shceduling java functionality. 
 Meanwhile threads are used. 
 
 WINDOWS:
