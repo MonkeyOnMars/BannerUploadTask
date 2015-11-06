@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes" encoding="UTF-8"/>
+    </target>
+
+    <target name="jar">
+        <mkdir dir="dist"/>
+        <jar destfile="dist/BannerUploadTask.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="lv.rv.BannerUpload"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="dist/BannerUploadTask.jar" fork="true" encoding="UTF-8"/>
+    </target>
+
+</project>

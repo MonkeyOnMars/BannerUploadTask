@@ -1,5 +1,5 @@
 echo "run jar..."
 
-java -jar dist/BannerUploadTask.jar
+java -Dfile.encoding=UTF-8 -jar dist/BannerUploadTask.jar 
 
 echo "ok. bye."

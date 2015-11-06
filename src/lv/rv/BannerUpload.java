@@ -28,7 +28,8 @@ public class BannerUpload
             {
                 try
                 {        
-                 Common.OUT_FILE = new StringBuffer( (new File(".").getCanonicalPath()) ).append("/banner.html").toString();
+                 Common.OUT_FILE = new StringBuffer( (new File(".").getCanonicalPath()) )
+                         .append("/banner.html").toString();
                 }
                 catch (IOException io)
                 {
@@ -36,7 +37,7 @@ public class BannerUpload
                     return;
                 }
                
-                Common.log("Set out to: " +  Common.OUT_FILE);
+                Common.log(new StringBuffer("Set out to: ").append(Common.OUT_FILE).toString());
             }
         
         Common.log("Banner will be written to ".concat(Common.OUT_FILE));
