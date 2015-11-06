@@ -9,11 +9,11 @@ INSTALL AND RUN
 WINDOWS:
 
 Build code with "build_win.bat". 
-JAVA_HOME must be set. 
+JAVA_HOME with JDK must be set prior to that. 
 
-Added ANT into project directory for builds. external/apache-ant-1.9.6  
+(To simplify access i Added ANT to project directory: external/apache-ant-1.9.6)  
 
-When code is built, run jar via  calling "run_win.bat"
+When code is built, run application's jar via calling "run_win.bat"
 
 
 UNX:
