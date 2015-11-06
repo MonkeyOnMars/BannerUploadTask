@@ -28,6 +28,8 @@ Application reads values from http://www.pukukurjers.lv/veikals.xml every 15 min
 Every 1 min one banner from that list is written to banner.html as DIV
 bannerConsumer.html injects banner.html onload.
 
+You can change intervals in cfg/config.properties 
+
 
 Refresh bannerConsumer.html to see results.
 
